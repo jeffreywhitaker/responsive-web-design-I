@@ -75,6 +75,10 @@ header {
 	justify-content: space-around;
 }
 
+header nav {
+	margin-top: 10px;
+}
+
 header nav a {
 	margin: 20px;
 }
@@ -232,6 +236,10 @@ header nav a {
 		max-width: 100%;
 	}
 
+	header nav {
+		padding-bottom: 10px;
+	}
+
 	/* services page */
 	.services-info-img {
 		display: none;
@@ -263,6 +271,7 @@ header nav a {
 
 	.navigation {
 		display: flex;
+		width: 100%;
 		flex-direction: column;
 	}
 
@@ -272,9 +281,9 @@ header nav a {
 
 	header nav a {
 		text-align: center;
+		width: 100%;
 		flex-grow: 1;
 		border-bottom: 1px solid black;
-		border-top: 1px solid black;
-		padding: 5px 0;
+		padding-bottom: 20px;
 	}
 }
