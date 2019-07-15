@@ -62,7 +62,7 @@ h1, h2, h3, h4, h5 {
 /* Copy and paste your work from yesterday here and start to refactor into flexbox */
 
 .container {
-	width: 880px;
+	max-width: 880px;
 	margin: auto;
 }
 
@@ -185,13 +185,6 @@ footer {
 	background-color: aqua;
 }
 
-@media only screen and (max-width: 600px) {
-	.box_section .stuff_box {
-		width: 80%;
-
-	}
-}
-
 .stuff_box .button {
 	text-align: center;
 	background-color: white;
@@ -209,4 +202,65 @@ footer {
 	list-style-position: inside;
 }
 
+/* Responsive Design */
+
+@media only screen and (max-width: 800px) {
+	.box_section .stuff_box {
+		max-width: 80%;
+
+    }
+    
+    header {
+	flex-direction: row-reverse;
+	justify-content: center;
+    }
+
+    .logo2 {
+        display: none;
+    }
+
+    .container img {
+        max-width: 100%;
+    }
+
+    .cta {
+        justify-content: center;
+    }
+
+    .container {
+        max-width: 100%;
+    }
+
+    header .navigation {
+        width: 80%;
+    }
+
+    header .logo {
+        flex-grow: 1;
+        justify-content: center;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+	.box_section .stuff_box {
+		width: 80%;
+
+    }
+    
+    .container img {
+        max-width: 100%;
+    }
+
+    .container {
+        max-width: 500px;
+	}
+	
+	.top-content {
+		flex-grow: 1;
+		width: 100%;
+	}
+	.content {
+		width: 100%;
+	}
+}
 
